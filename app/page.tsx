@@ -322,7 +322,7 @@ const popularDishes = [
     name: "Shoarma",
     description: "Shoarma medium en large vanaf",
     price: 8.5,
-    image: "/IMG-20251203-WA0008.jpg",
+    image: "/shoarmaschotel.jpg",
   },
   {
     id: 3,
