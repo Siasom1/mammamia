@@ -21,7 +21,7 @@ export default function HomePage() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between px-4">
           <Link href="/" className="flex items-center gap-2">
-            <span className="text-2xl font-serif font-bold text-primary">MAMMAMIA</span>
+            <img src="/mammamia-logo.jpg" alt="MAMMAMIA Grillroom & Shoarma" className="h-12 w-auto" />
           </Link>
           <nav className="hidden md:flex items-center gap-6">
             <Link href="#menu" className="text-sm font-medium hover:text-primary transition-colors">
@@ -315,14 +315,14 @@ const popularDishes = [
     name: "Kipshoarma Schotel",
     description: "Verse kipshoarma, met rijst of patat of gebakken aardappelen , salade, saus",
     price: 17.5,
-    image: "/kipshoarma.jpeg",
+    image: "/IMG-20251203-WA0008.jpg",
   },
   {
     id: 2,
     name: "Shoarma",
     description: "Shoarma medium en large vanaf",
     price: 8.5,
-    image: "/shoarmaschotel.jpg",
+    image: "/IMG-20251203-WA0008.jpg",
   },
   {
     id: 3,
