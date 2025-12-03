@@ -21,7 +21,7 @@ export default function HomePage() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between px-4">
           <Link href="/" className="flex items-center gap-2">
-            <img src="/mammamia-logo.jpg" alt="MAMMAMIA Grillroom & Shoarma" className="h-12 w-auto" />
+            <img src="/mammamia-logo.jpg" alt="MAMMAMIA Grillroom & Shoarma" className="h-25 w-auto" />
           </Link>
           <nav className="hidden md:flex items-center gap-6">
             <Link href="#menu" className="text-sm font-medium hover:text-primary transition-colors">
