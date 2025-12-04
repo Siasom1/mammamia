@@ -174,12 +174,12 @@ export default function HomePage() {
             <div>
               <h2 className="font-serif text-4xl font-bold mb-6">Over MAMMAMIA</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Sinds 2010 serveren wij de lekkerste shoarma en grill specialiteiten in de regio. Onze passie voor verse
-                ingrediënten en authentieke bereidingsmethoden zorgt voor een onvergetelijke smaakervaring.
+                Sinds 1989 serveren wij de lekkerste shoarma en grill specialiteiten in de regio. Onze passie voor verse
+                ingrediënten en authentieke bereidingsmethoden zorgt voor een onvergetelijke smaakervaring keuze uit meerdere gerechten, ook vegetarisch.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Van vers gegrilde kipshoarma tot sappige mixed grill - elk gerecht wordt met liefde en zorg bereid
-                volgens traditionele recepten en met de beste kruiden.
+                Van vers gegrilde shoarma tot sappige mixed grill - elk gerecht wordt met liefde en zorg bereid
+                volgens traditionele recepten en met de beste kruiden, ook voor onze niet vlees eters hebben we genoeg keuze. Bekijk onze menu.
               </p>
               <Link href="/menu">
                 <Button size="lg">Bestel Nu</Button>
