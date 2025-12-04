@@ -185,9 +185,9 @@ export default function HomePage() {
                 <Button size="lg">Bestel Nu</Button>
               </Link>
             </div>
-            <div className="relative h-[400px] rounded-lg overflow-hidden">
+            <div className="relative h-[700px] rounded-lg overflow-hidden">
               <img
-                src="/chef-preparing-shawarma-meat-vertical-rotisserie.jpg"
+                src="/20251204_210833.jpg"
                 alt="Chef bereidt shoarma"
                 className="w-full h-full object-cover"
               />
