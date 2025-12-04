@@ -205,23 +205,23 @@ export default function HomePage() {
           </div>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card className="p-6">
-              <h3 className="font-semibold text-xl mb-4">Amsterdam Centrum</h3>
+              <h3 className="font-semibold text-xl mb-4">Amsterdam Oost</h3>
               <div className="space-y-3">
                 <div className="flex gap-3">
                   <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-sm leading-relaxed">Prinsengracht 123, 1015 Amsterdam</span>
+                  <span className="text-sm leading-relaxed">Wagenaarstraat 16, 1093 CR Amsterdam</span>
                 </div>
                 <div className="flex gap-3">
                   <Phone className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-sm">020-1234567</span>
+                  <span className="text-sm">020-2235996</span>
                 </div>
                 <div className="flex gap-3">
                   <Clock className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-sm leading-relaxed">Ma-Zo: 12:00 - 22:00</span>
+                  <span className="text-sm leading-relaxed">Ma-Zo: 11:00 - 24:00</span>
                 </div>
               </div>
             </Card>
-            <Card className="p-6">
+            {/* <Card className="p-6">
               <h3 className="font-semibold text-xl mb-4">Rotterdam Zuid</h3>
               <div className="space-y-3">
                 <div className="flex gap-3">
@@ -237,7 +237,7 @@ export default function HomePage() {
                   <span className="text-sm leading-relaxed">Ma-Zo: 12:00 - 22:00</span>
                 </div>
               </div>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </section>
@@ -305,7 +305,7 @@ export default function HomePage() {
             <div>
               <h4 className="font-semibold mb-4">Volg Ons</h4>
               <ul className="space-y-2 text-sm">
-                <li>
+                {/* <li>
                   <a href="#" className="text-muted-foreground hover:text-foreground">
                     Instagram
                   </a>
@@ -319,7 +319,7 @@ export default function HomePage() {
                   <a href="#" className="text-muted-foreground hover:text-foreground">
                     TikTok
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -336,29 +336,29 @@ const popularDishes = [
   {
     id: 1,
     name: "Kipshoarma Schotel",
-    description: "Verse kipshoarma, rijst, salade, saus",
+    description: "Verse kipshoarma, met rijst of patat of gebakken aardappelen , salade, saus",
     price: 17.5,
     image: "/IMG-20251203-WA0008.jpg",
   },
   {
     id: 2,
-    name: "Mixed Grill",
-    description: "Kip, lams, kofta, rijst, groenten",
-    price: 16.5,
-    image: "/mixed-grill-platter-meat-skewers-rice.jpg",
+    name: "Shoarma",
+    description: "Shoarma medium en large vanaf",
+    price: 8.5,
+    image: "/shoarmaschotel.jpg",
   },
   {
     id: 3,
-    name: "Kapsalon",
-    description: "Friet, shoarma, kaas, sla, saus",
-    price: 9.5,
-    image: "/kapsalon-fries-shawarma-cheese-salad.jpg",
+    name: "Spareribs schotel inclusief salade patat of gebakken aardappel en saus",
+    description: "Spareribs",
+    price: 19.5,
+    image: "/sparerib.jpeg",
   },
   {
     id: 4,
-    name: "Lamsshoarma Wrap",
-    description: "Lamsshoarma, groenten, knoflooksaus",
-    price: 8.5,
-    image: "/lamb-shawarma-wrap-pita-vegetables.jpg",
+    name: "Verschillende Wraps",
+    description: "Kip,Shoarma,of Falafel, vegetarisch ook mogelijk groenten, knoflooksaus",
+    price: 9.5,
+    image: "/wraps.jpeg",
   },
 ]

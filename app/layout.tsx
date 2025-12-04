@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   title: "MAMMAMIA - Verse Shoarma & Mixed Grill Specialiteiten",
   description:
     "Bestel verse shoarma en mixed grill online. Kipshoarma, lamsshoarma, kapsalon en meer. Snelle bezorging in Amsterdam.",
-  keywords: ["shoarma", "mixed grill", "kapsalon", "online bestellen", "Amsterdam", "Rotterdam", "bezorgen"],
+  keywords: ["shoarma", "mixed grill", "kapsalon", "online bestellen", "Amsterdam", "", "bezorgen"],
 }
 
 export const viewport: Viewport = {
