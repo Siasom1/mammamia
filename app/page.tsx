@@ -21,7 +21,7 @@ export default function HomePage() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between px-4">
           <Link href="/" className="flex items-center gap-2">
-            <img src="/mammamia-logo.jpg" alt="MAMMAMIA Grillroom & Shoarma" className="h-25 w-auto" />
+            <img src="/mammamia-logo.jpg" alt="MAMMAMIA Grillroom & Shoarma" className="h-12 w-auto" />
           </Link>
           <nav className="hidden md:flex items-center gap-6">
             <Link href="#menu" className="text-sm font-medium hover:text-primary transition-colors">
@@ -52,18 +52,24 @@ export default function HomePage() {
       <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="./mammamia1.jpeg"
+            src="/mammamia1.jpeg"
             alt="Grillende shoarma"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/40" />
         </div>
+        <div className="absolute top-6 right-6 md:top-10 md:right-9 z-30">
+          <img
+            src="/mammamia-logo.jpg"
+            alt="MAMMAMIA Logo"
+            className="w-auto shadow-2xl rounded-lg"
+            style={{ height: "var(--hero-logo-height, 140px)" }}
+          />
+        </div>
         <div className="relative z-10 text-center px-4 max-w-3xl mx-auto text-white">
-          <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6 text-balance">Echte Shoarma vers van de Grill</h1>
+          <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6 text-balance">Vers van de Grill</h1>
           <p className="text-lg md:text-xl mb-8 text-pretty text-white/90 leading-relaxed">
-            Authentieke shoarma en spareribs dat zijn onze specialiteiten daarnaast hebben wij ook falafel, vers bereid. Kom lekker eten, afhalen of bezorgen is mogelijk.
-            Opening actie vanaf 6 personen 20% korting
-          
+            Authentieke shoarma en mixed grill specialiteiten. Vers bereid, direct bezorgd.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/menu">
@@ -110,9 +116,9 @@ export default function HomePage() {
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
                 <MapPin className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="font-semibold text-lg mb-2"> Locatie Wagenaarstraat 16 Amsterdam Oost</h3>
+              <h3 className="font-semibold text-lg mb-2">Meerdere Locaties</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Afhalen of bezorgen
+                Afhalen of bezorgen vanuit jouw dichtstbijzijnde vestiging
               </p>
             </Card>
           </div>
@@ -123,7 +129,7 @@ export default function HomePage() {
       <section className="py-16" id="menu">
         <div className="container px-4">
           <div className="text-center mb-12">
-            <h2 className="font-serif text-4xl font-bold mb-4">Onze Gerechten</h2>
+            <h2 className="font-serif text-4xl font-bold mb-4">Populaire Gerechten</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
               Ontdek onze meest geliefde gerechten, vers bereid op de grill met authentieke kruiden
             </p>
@@ -168,11 +174,11 @@ export default function HomePage() {
             <div>
               <h2 className="font-serif text-4xl font-bold mb-6">Over MAMMAMIA</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Sinds 1989 serveren wij echte shoarma, falafel en grill specialiteiten in de regio. Onze passie voor verse
+                Sinds 2010 serveren wij de lekkerste shoarma en grill specialiteiten in de regio. Onze passie voor verse
                 ingrediënten en authentieke bereidingsmethoden zorgt voor een onvergetelijke smaakervaring.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Van vers gegrilde kip, shoarma tot sappige mixed grill - elk gerecht wordt met liefde en zorg bereid
+                Van vers gegrilde kipshoarma tot sappige mixed grill - elk gerecht wordt met liefde en zorg bereid
                 volgens traditionele recepten en met de beste kruiden.
               </p>
               <Link href="/menu">
@@ -181,7 +187,7 @@ export default function HomePage() {
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden">
               <img
-                src="/mammamia2.jpeg"
+                src="/chef-preparing-shawarma-meat-vertical-rotisserie.jpg"
                 alt="Chef bereidt shoarma"
                 className="w-full h-full object-cover"
               />
@@ -199,19 +205,36 @@ export default function HomePage() {
           </div>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card className="p-6">
-              <h3 className="font-semibold text-xl mb-4">Amsterdam Oost</h3>
+              <h3 className="font-semibold text-xl mb-4">Amsterdam Centrum</h3>
               <div className="space-y-3">
                 <div className="flex gap-3">
                   <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-sm leading-relaxed">Wagenaarstraat 16, 1093 CR Amsterdam</span>
+                  <span className="text-sm leading-relaxed">Prinsengracht 123, 1015 Amsterdam</span>
                 </div>
                 <div className="flex gap-3">
                   <Phone className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-sm">020-2235996</span>
+                  <span className="text-sm">020-1234567</span>
                 </div>
                 <div className="flex gap-3">
                   <Clock className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-sm leading-relaxed">Ma-Do: 11:00 - 23:00 Weekend: 11:00 - 02:00</span>
+                  <span className="text-sm leading-relaxed">Ma-Zo: 12:00 - 22:00</span>
+                </div>
+              </div>
+            </Card>
+            <Card className="p-6">
+              <h3 className="font-semibold text-xl mb-4">Rotterdam Zuid</h3>
+              <div className="space-y-3">
+                <div className="flex gap-3">
+                  <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-sm leading-relaxed">Witte de Withstraat 45, 3012 Rotterdam</span>
+                </div>
+                <div className="flex gap-3">
+                  <Phone className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-sm">010-7654321</span>
+                </div>
+                <div className="flex gap-3">
+                  <Clock className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-sm leading-relaxed">Ma-Zo: 12:00 - 22:00</span>
                 </div>
               </div>
             </Card>
@@ -224,7 +247,7 @@ export default function HomePage() {
         <div className="container px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="font-serif font-bold text-xl mb-4">MAMMAMIA</h3>
+              <img src="/mammamia-logo.jpg" alt="MAMMAMIA" className="h-16 w-auto mb-4" />
               <p className="text-sm text-muted-foreground leading-relaxed">
                 Verse shoarma en grill specialiteiten, met liefde bereid en geserveerd.
               </p>
@@ -268,18 +291,18 @@ export default function HomePage() {
                   </Link>
                 </li>
                 <li>
-                  {/* <Link href="/algemene-voorwaarden" className="text-muted-foreground hover:text-foreground">
+                  <Link href="/algemene-voorwaarden" className="text-muted-foreground hover:text-foreground">
                     Algemene Voorwaarden
-                  </Link> */}
+                  </Link>
                 </li>
                 <li>
-                  {/* <Link href="/privacy" className="text-muted-foreground hover:text-foreground">
+                  <Link href="/privacy" className="text-muted-foreground hover:text-foreground">
                     Privacy
-                  </Link> */}
+                  </Link>
                 </li>
               </ul>
             </div>
-            {/* <div>
+            <div>
               <h4 className="font-semibold mb-4">Volg Ons</h4>
               <ul className="space-y-2 text-sm">
                 <li>
@@ -298,7 +321,7 @@ export default function HomePage() {
                   </a>
                 </li>
               </ul>
-            </div> */}
+            </div>
           </div>
           <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
             <p>© 2025 MAMMAMIA. Alle rechten voorbehouden.</p>
@@ -313,29 +336,29 @@ const popularDishes = [
   {
     id: 1,
     name: "Kipshoarma Schotel",
-    description: "Verse kipshoarma, met rijst of patat of gebakken aardappelen , salade, saus",
+    description: "Verse kipshoarma, rijst, salade, saus",
     price: 17.5,
     image: "/IMG-20251203-WA0008.jpg",
   },
   {
     id: 2,
-    name: "Shoarma",
-    description: "Shoarma medium en large vanaf",
-    price: 8.5,
-    image: "/shoarmaschotel.jpg",
+    name: "Mixed Grill",
+    description: "Kip, lams, kofta, rijst, groenten",
+    price: 16.5,
+    image: "/mixed-grill-platter-meat-skewers-rice.jpg",
   },
   {
     id: 3,
-    name: "Spareribs schotel inclusief salade patat of gebakken aardappel en saus",
-    description: "Spareribs",
-    price: 19.5,
-    image: "/sparerib.jpeg",
+    name: "Kapsalon",
+    description: "Friet, shoarma, kaas, sla, saus",
+    price: 9.5,
+    image: "/kapsalon-fries-shawarma-cheese-salad.jpg",
   },
   {
     id: 4,
-    name: "Verschillende Wraps",
-    description: "Kip,Shoarma,of Falafel, vegetarisch ook mogelijk groenten, knoflooksaus",
-    price: 9.5,
-    image: "/wraps.jpeg",
+    name: "Lamsshoarma Wrap",
+    description: "Lamsshoarma, groenten, knoflooksaus",
+    price: 8.5,
+    image: "/lamb-shawarma-wrap-pita-vegetables.jpg",
   },
 ]
