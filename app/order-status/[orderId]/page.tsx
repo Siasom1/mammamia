@@ -1,27 +1,14 @@
-"use client"
-
-import { useEffect, useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { CheckCircle2, Package, Truck, ChefHat } from "lucide-react"
 
+export async function generateStaticParams() {
+  // Generate static params for common order IDs or return empty for on-demand rendering
+  return []
+}
+
 export default function OrderStatusPage({ params }: { params: { orderId: string } }) {
-  const [status, setStatus] = useState<"confirmed" | "preparing" | "delivering" | "completed">("confirmed")
-
-  useEffect(() => {
-    // Simulate order status updates
-    const timer1 = setTimeout(() => setStatus("preparing"), 2000)
-    const timer2 = setTimeout(() => setStatus("delivering"), 5000)
-    const timer3 = setTimeout(() => setStatus("completed"), 8000)
-
-    return () => {
-      clearTimeout(timer1)
-      clearTimeout(timer2)
-      clearTimeout(timer3)
-    }
-  }, [])
-
   const steps = [
     { id: "confirmed", label: "Bevestigd", icon: CheckCircle2 },
     { id: "preparing", label: "In Bereiding", icon: ChefHat },
@@ -29,7 +16,7 @@ export default function OrderStatusPage({ params }: { params: { orderId: string 
     { id: "completed", label: "Bezorgd", icon: Package },
   ]
 
-  const currentStepIndex = steps.findIndex((step) => step.id === status)
+  const currentStepIndex = 0 // Always show first step (confirmed)
 
   return (
     <div className="min-h-screen bg-background">
@@ -82,38 +69,12 @@ export default function OrderStatusPage({ params }: { params: { orderId: string 
             </div>
 
             <div className="text-left bg-muted/30 rounded-lg p-6">
-              {status === "confirmed" && (
-                <div>
-                  <h3 className="font-semibold mb-2">Bestelling Bevestigd</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    We hebben je bestelling ontvangen en sturen deze door naar de keuken.
-                  </p>
-                </div>
-              )}
-              {status === "preparing" && (
-                <div>
-                  <h3 className="font-semibold mb-2">In Bereiding</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    Onze chef is druk bezig met het bereiden van jouw gerechten met verse ingrediënten.
-                  </p>
-                </div>
-              )}
-              {status === "delivering" && (
-                <div>
-                  <h3 className="font-semibold mb-2">Onderweg</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    Je bestelling is onderweg! Verwachte levertijd: 15-20 minuten.
-                  </p>
-                </div>
-              )}
-              {status === "completed" && (
-                <div>
-                  <h3 className="font-semibold mb-2">Bezorgd</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    Je bestelling is bezorgd. Eet smakelijk!
-                  </p>
-                </div>
-              )}
+              <div>
+                <h3 className="font-semibold mb-2">Bestelling Bevestigd</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  We hebben je bestelling ontvangen en sturen deze door naar de keuken.
+                </p>
+              </div>
             </div>
           </div>
 

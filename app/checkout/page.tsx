@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
@@ -52,8 +52,13 @@ export default function CheckoutPage() {
     setFormData((prev) => ({ ...prev, [field]: value }))
   }
 
+  useEffect(() => {
+    if (cart.length === 0) {
+      router.push("/cart")
+    }
+  }, [cart, router])
+
   if (cart.length === 0) {
-    router.push("/cart")
     return null
   }
 

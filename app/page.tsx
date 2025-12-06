@@ -342,17 +342,17 @@ const popularDishes = [
   },
   {
     id: 2,
-    name: "Shoarma",
-    description: "Shoarma medium en large vanaf",
+    name: "Falafel",
+    description: "Falafel pita en wraps",
     price: 8.5,
-    image: "/shoarmaschotel.jpg",
+    image: "/IMG-20251204-WA0001.jpg",
   },
   {
     id: 3,
-    name: "Spareribs schotel inclusief salade patat of gebakken aardappel en saus",
-    description: "Spareribs",
+    name: "Kipsate schotel inclusief salade patat of gebakken aardappel en saus",
+    description: "Kipsate",
     price: 19.5,
-    image: "/sparerib.jpeg",
+    image: "/IMG-20251204-WA0000.jpg",
   },
   {
     id: 4,
