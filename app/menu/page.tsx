@@ -11,6 +11,7 @@ import { useCart } from "@/lib/cart-context"
 
 const categories = [
   { id: "all", label: "Alles", count: 32 },
+  { id: "vegetarisch", label: "Vegetarisch", count: 4 },
   { id: "shoarma", label: "Shoarma", count: 8 },
   { id: "grill", label: "Mixed Grill", count: 6 },
   { id: "kapsalon", label: "Kapsalon", count: 4 },
@@ -24,54 +25,53 @@ const menuItems = [
   // Shoarma Schotels
   {
     id: 1,
-    name: "Kipshoarma Schotel",
-    description: "Vers gegrilde kipshoarma, rijst, salade, knoflooksaus",
-    price: 12.5,
+    name: "Kipfilet en Shoarma Schotel",
+    description: "Shoarma",
     category: "shoarma",
-    image: "/dish-1.jpg", // replaced with real restaurant photo
+    price: 12.5,
+    image: "/shoarmakipfilet.jpg", // replaced with real restaurant photo
   },
   {
     id: 2,
-    name: "Lamsshoarma Schotel",
-    description: "Sappige lamsshoarma, rijst, groenten, yoghurtsaus",
-    price: 14.5,
-    category: "shoarma",
-    image: "/dish-5.jpg", // replaced with real restaurant photo
+    name: "Entrecote Shoarma",
+    description: "Entrecote, Shoarma, patat, groenten",
+    category: "grill",
+    price: 16.5,
+    image: "/entrecote.jpg", // replaced with real restaurant photo
   },
   {
     id: 3,
-    name: "Shoarma Mix Schotel",
-    description: "Kip en lams shoarma, rijst, salade, twee sauzen",
-    price: 13.5,
-    category: "shoarma",
-    image: "/dish-3.jpg", // replaced with real restaurant photo
+    name: "Kapsalon",
+    description: "Friet, shoarma, kaas, sla, saus",
+    category: "kapsalon",
+    price: 9.5,
+    image: "/kapsalon.jpg", // replaced with real restaurant photo
   },
   {
     id: 4,
-    name: "Vegetarische Falafel Schotel",
-    description: "Huisgemaakte falafel, hummus, tabouleh, tahinsaus",
-    price: 11.5,
-    category: "shoarma",
-    image: "/dish-6.jpg", // replaced with real restaurant photo
-    vegetarian: true,
+    name: "Wraps",
+    description: "Falafel, Shoarma  Vegetarisch, ",
+    category: "wraps",
+    price: 8.5,
+    image: "/wraps.jpeg", // replaced with real restaurant photo
   },
 
   // Mixed Grill
   {
     id: 5,
-    name: "Mixed Grill Special",
-    description: "Kipspies, lamskoteletten, kofta, rijst, groenten",
-    price: 18.5,
-    category: "grill",
-    image: "/dish-2.jpg", // replaced with real restaurant photo
+    name: "Falafel",
+    description: "Falafel",
+    category: "vegetarisch",
+    price: 8.5,
+    image: "/falafel.jpeg", // replaced with real restaurant photo
   },
   {
     id: 6,
-    name: "Kipspies",
-    description: "Gemarineerde kipfilet aan het spit, rijst, salade",
-    price: 14.5,
-    category: "grill",
-    image: "/dish-4.jpg", // replaced with real restaurant photo
+    name: "Familie Shoarma Menu",
+    description: "Shoarma, patat, suazen, sla",
+    category: "shoarma",
+    price: 8.5,
+    image: "/famshomenu.jpg", // replaced with real restaurant photo
   },
   {
     id: 7,
@@ -269,22 +269,8 @@ const menuItems = [
     category: "dranken",
     image: "/placeholder.svg?key=water1",
   },
-  {
-    id: 29,
-    name: "Ayran",
-    description: "Turkse yoghurtdrank",
-    price: 2.5,
-    category: "dranken",
-    image: "/placeholder.svg?key=ayran1",
-  },
-  {
-    id: 30,
-    name: "Turkse Thee",
-    description: "Traditionele thee",
-    price: 2.0,
-    category: "dranken",
-    image: "/placeholder.svg?key=tea1",
-  },
+  
+ 
 ]
 
 export default function MenuPage() {

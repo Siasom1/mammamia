@@ -336,9 +336,9 @@ const popularDishes = [
   {
     id: 1,
     name: "Kipfilet en Shoarma Schotel",
-    description: "Verse kipfilet en Shoarma",
+    description: "Shoarma",
     price: 12.5,
-    image: "/shoarma-kip.jpg", // replaced with real restaurant photo
+    image: "/shoarmakipfilet.jpg", // replaced with real restaurant photo
   },
   {
     id: 2,
@@ -432,21 +432,21 @@ const popularDishes = [
     image: "/shoarma-spareribs.jpg", // replaced with real restaurant photo
   },
   {
-    id: 10,
+    id: 15,
     name: "Shoarmakebab",
     description: "Shoarmakebab",
     price: 8.5,
     image: "/shoarmakebab.jpg", // replaced with real restaurant photo
   },
   {
-    id: 10,
+    id: 16,
     name: "Shoarmaschotel",
     description: "Shoarmaschotel",
     price: 8.5,
     image: "/shoarmaschotel.jpg", // replaced with real restaurant photo
   },
   {
-    id: 10,
+    id: 17,
     name: "Spareribs Schotel",
     description: "Spareribs Schotel",
     price: 8.5,
