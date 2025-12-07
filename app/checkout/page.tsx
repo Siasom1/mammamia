@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
@@ -52,13 +52,8 @@ export default function CheckoutPage() {
     setFormData((prev) => ({ ...prev, [field]: value }))
   }
 
-  useEffect(() => {
-    if (cart.length === 0) {
-      router.push("/cart")
-    }
-  }, [cart, router])
-
   if (cart.length === 0) {
+    router.push("/cart")
     return null
   }
 
@@ -68,7 +63,7 @@ export default function CheckoutPage() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between px-4">
           <Link href="/" className="flex items-center gap-2">
-            <span className="text-2xl font-serif font-bold text-primary">MAMMAMIA</span>
+            <img src="/mammamia-logo.jpg" alt="MAMMAMIA Grillroom & Shoarma" className="h-12 w-auto" />
           </Link>
           <Link href="/cart">
             <Button size="sm" variant="outline" className="gap-2 bg-transparent">

@@ -24,46 +24,46 @@ const menuItems = [
   // Shoarma Schotels
   {
     id: 1,
-    name: " Kip shoarma schotel",
-    description: "Vers gegrilde kipshoarma, rijst, of patat, of gebakken aardappel, salade, knoflooksaus",
-    price: 17.5,
-    category: "Kip",
-    image: "/kipshoarma.jpeg",
+    name: "Kipshoarma Schotel",
+    description: "Vers gegrilde kipshoarma, rijst, salade, knoflooksaus",
+    price: 12.5,
+    category: "shoarma",
+    image: "/dish-1.jpg", // replaced with real restaurant photo
   },
   {
     id: 2,
-    name: "Shoarma Schotel",
-    description: "Sappige shoarma, rijst, groenten, yoghurtsaus",
-    price: 17.5,
+    name: "Lamsshoarma Schotel",
+    description: "Sappige lamsshoarma, rijst, groenten, yoghurtsaus",
+    price: 14.5,
     category: "shoarma",
-    image: "/shoarmaschotel.jpg",
+    image: "/dish-5.jpg", // replaced with real restaurant photo
   },
   {
     id: 3,
-    name: "Spareribs Schotel",
-    description: "Spareribs, rijst, salade, twee sauzen",
-    price: 19.5,
+    name: "Shoarma Mix Schotel",
+    description: "Kip en lams shoarma, rijst, salade, twee sauzen",
+    price: 13.5,
     category: "shoarma",
-    image: "/sparerib.jpeg",
+    image: "/dish-3.jpg", // replaced with real restaurant photo
   },
   {
     id: 4,
     name: "Vegetarische Falafel Schotel",
     description: "Huisgemaakte falafel, hummus, tabouleh, tahinsaus",
-    price: 12.5,
+    price: 11.5,
     category: "shoarma",
-    image: "/falafel-plate-hummus-vegetables-tahini.jpg",
+    image: "/dish-6.jpg", // replaced with real restaurant photo
     vegetarian: true,
   },
 
   // Mixed Grill
   {
     id: 5,
-    name: "Wrapps",
+    name: "Mixed Grill Special",
     description: "Kipspies, lamskoteletten, kofta, rijst, groenten",
-    price: 9.5,
+    price: 18.5,
     category: "grill",
-    image: "/mixed-grill-platter-meat-skewers-rice.jpg",
+    image: "/dish-2.jpg", // replaced with real restaurant photo
   },
   {
     id: 6,
@@ -71,7 +71,7 @@ const menuItems = [
     description: "Gemarineerde kipfilet aan het spit, rijst, salade",
     price: 14.5,
     category: "grill",
-    image: "/chicken-skewers-grilled-rice-salad.jpg",
+    image: "/dish-4.jpg", // replaced with real restaurant photo
   },
   {
     id: 7,
@@ -79,7 +79,7 @@ const menuItems = [
     description: "Malse lamskoteletten, aardappelen, gegrilde groenten",
     price: 16.5,
     category: "grill",
-    image: "/lamb-chops-grilled-potatoes-vegetables.jpg",
+    image: "/dish-5.jpg", // replaced with real restaurant photo
   },
   {
     id: 8,
@@ -87,7 +87,7 @@ const menuItems = [
     description: "Gekruid gehakt aan het spit, rijst, groenten",
     price: 13.5,
     category: "grill",
-    image: "/kofta-kebab-minced-meat-rice.jpg",
+    image: "/dish-1.jpg", // replaced with real restaurant photo
   },
 
   // Kapsalon
@@ -97,7 +97,7 @@ const menuItems = [
     description: "Friet, kipshoarma, gesmolten kaas, sla, tomaat, komkommer, saus",
     price: 9.5,
     category: "kapsalon",
-    image: "/kapsalon-fries-shawarma-cheese-salad.jpg",
+    image: "/dish-4.jpg", // replaced with real restaurant photo
   },
   {
     id: 10,
@@ -105,7 +105,7 @@ const menuItems = [
     description: "Friet, lamsshoarma, gesmolten kaas, sla, tomaat, komkommer, saus",
     price: 10.5,
     category: "kapsalon",
-    image: "/kapsalon-lamb-fries-cheese-vegetables.jpg",
+    image: "/dish-5.jpg", // replaced with real restaurant photo
   },
   {
     id: 11,
@@ -113,7 +113,7 @@ const menuItems = [
     description: "Friet, kip & lams shoarma, kaas, volledige salade bar",
     price: 11.0,
     category: "kapsalon",
-    image: "/kapsalon-mixed-meat-fries-cheese.jpg",
+    image: "/dish-3.jpg", // replaced with real restaurant photo
   },
   {
     id: 12,
@@ -121,7 +121,7 @@ const menuItems = [
     description: "Friet, falafel, kaas, sla, groenten, tahinsaus",
     price: 9.0,
     category: "kapsalon",
-    image: "/kapsalon-falafel-vegetarian-cheese.jpg",
+    image: "/dish-6.jpg", // replaced with real restaurant photo
     vegetarian: true,
   },
 
@@ -132,7 +132,7 @@ const menuItems = [
     description: "Tortilla, kipshoarma, sla, tomaat, komkommer, knoflooksaus",
     price: 7.5,
     category: "wraps",
-    image: "/chicken-shawarma-wrap-tortilla-vegetables.jpg",
+    image: "/dish-1.jpg", // replaced with real restaurant photo
   },
   {
     id: 14,
@@ -140,7 +140,7 @@ const menuItems = [
     description: "Tortilla, lamsshoarma, groenten, yoghurtsaus",
     price: 8.5,
     category: "wraps",
-    image: "/lamb-shawarma-wrap-pita-vegetables.jpg",
+    image: "/dish-5.jpg", // replaced with real restaurant photo
   },
   {
     id: 15,
@@ -148,7 +148,7 @@ const menuItems = [
     description: "Tortilla, falafel, hummus, tabouleh, tahinsaus",
     price: 7.0,
     category: "wraps",
-    image: "/falafel-wrap-hummus-vegetables-tahini.jpg",
+    image: "/dish-6.jpg", // replaced with real restaurant photo
     vegetarian: true,
   },
   {
@@ -157,7 +157,7 @@ const menuItems = [
     description: "Tortilla, kofta kebab, groenten, pittige saus",
     price: 8.0,
     category: "wraps",
-    image: "/kofta-wrap-spicy-sauce-vegetables.jpg",
+    image: "/dish-2.jpg", // replaced with real restaurant photo
     spicy: true,
   },
 
@@ -168,7 +168,7 @@ const menuItems = [
     description: "Gemengde sla, kipshoarma, groenten, dressing",
     price: 10.5,
     category: "salades",
-    image: "/shawarma-chicken-salad-mixed-greens.jpg",
+    image: "/dish-1.jpg", // replaced with real restaurant photo
   },
   {
     id: 18,
@@ -176,7 +176,7 @@ const menuItems = [
     description: "Gemengde sla, lamsshoarma, groenten, yoghurtdressing",
     price: 11.5,
     category: "salades",
-    image: "/shawarma-lamb-salad-vegetables-yogurt.jpg",
+    image: "/dish-5.jpg", // replaced with real restaurant photo
   },
   {
     id: 19,
@@ -184,7 +184,7 @@ const menuItems = [
     description: "Sla, falafel, hummus, olijven, tahindressing",
     price: 9.5,
     category: "salades",
-    image: "/falafel-salad-hummus-olives-tahini.jpg",
+    image: "/dish-6.jpg", // replaced with real restaurant photo
     vegetarian: true,
   },
   {
@@ -193,7 +193,7 @@ const menuItems = [
     description: "Tomaat, komkommer, olijven, feta, olijfolie",
     price: 8.5,
     category: "salades",
-    image: "/greek-salad-feta-olives-cucumber.jpg",
+    image: "/dish-3.jpg", // replaced with real restaurant photo
     vegetarian: true,
   },
 
@@ -320,7 +320,7 @@ export default function MenuPage() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between px-4">
           <Link href="/" className="flex items-center gap-2">
-            <span className="text-2xl font-serif font-bold text-primary">MAMMAMIA</span>
+            <img src="/mammamia-logo.jpg" alt="MAMMAMIA Grillroom & Shoarma" className="h-12 w-auto" />
           </Link>
           <Link href="/cart">
             <Button size="sm" variant="default" className="gap-2 relative">

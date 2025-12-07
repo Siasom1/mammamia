@@ -58,25 +58,25 @@ export default function HomePage() {
           />
           <div className="absolute inset-0 bg-black/40" />
         </div>
-        <div className="absolute top-6 right-6 md:top-10 md:right-9 z-30">
+        <div className="absolute top-4 right-4 md:top-8 md:right-8 z-20">
           <img
             src="/mammamia-logo.jpg"
             alt="MAMMAMIA Logo"
             className="w-auto shadow-2xl rounded-lg"
-            style={{ height: "var(--hero-logo-height, 140px)" }}
+            style={{ height: "var(--hero-logo-height, 120px)" }}
           />
         </div>
         <div className="relative z-10 text-center px-4 max-w-3xl mx-auto text-white">
           <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6 text-balance">Vers van de Grill</h1>
           <p className="text-lg md:text-xl mb-8 text-pretty text-white/90 leading-relaxed">
-            Authentieke shoarma en mixed grill specialiteiten. Vers bereid, direct bezorgd.
+            Authentieke shoarma, Falafel mixed grill en vegetarische specialiteiten. Vers bereid, direct bezorgd.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/menu">
+            {/* <Link href="/menu">
               <Button size="lg" className="w-full sm:w-auto text-base">
                 Bekijk Menu
               </Button>
-            </Link>
+            </Link> */}
             <Link href="#contact">
               <Button
                 size="lg"
@@ -109,10 +109,10 @@ export default function HomePage() {
               </div>
               <h3 className="font-semibold text-lg mb-2">Online Bestellen</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Bestel gemakkelijk online via onze website of app
+                Bestel gemakkelijk online via onze website of bel ons via ons telefoonnummer
               </p>
             </Card>
-            <Card className="p-6 text-center">
+            {/* <Card className="p-6 text-center">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
                 <MapPin className="h-6 w-6 text-primary" />
               </div>
@@ -120,7 +120,7 @@ export default function HomePage() {
               <p className="text-sm text-muted-foreground leading-relaxed">
                 Afhalen of bezorgen vanuit jouw dichtstbijzijnde vestiging
               </p>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </section>
@@ -129,9 +129,9 @@ export default function HomePage() {
       <section className="py-16" id="menu">
         <div className="container px-4">
           <div className="text-center mb-12">
-            <h2 className="font-serif text-4xl font-bold mb-4">Populaire Gerechten</h2>
+            <h2 className="font-serif text-4xl font-bold mb-4">Onze Gerechten</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
-              Ontdek onze meest geliefde gerechten, vers bereid op de grill met authentieke kruiden
+              Ontdek onze gerechten, vers bereid met authentieke kruiden. De grillschotels worden geleverd met patat of gebakken aardappelen, sausen en salade
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -158,11 +158,11 @@ export default function HomePage() {
             ))}
           </div>
           <div className="text-center mt-8">
-            <Link href="/menu">
+            {/* <Link href="/menu">
               <Button size="lg" variant="outline">
                 Volledig Menu Bekijken
               </Button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>
@@ -175,19 +175,19 @@ export default function HomePage() {
               <h2 className="font-serif text-4xl font-bold mb-6">Over MAMMAMIA</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Sinds 1989 serveren wij de lekkerste shoarma en grill specialiteiten in de regio. Onze passie voor verse
-                ingrediënten en authentieke bereidingsmethoden zorgt voor een onvergetelijke smaakervaring keuze uit meerdere gerechten, ook vegetarisch.
+                ingrediënten en authentieke bereidingsmethoden zorgt voor een onvergetelijke smaakervaring.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Van vers gegrilde shoarma tot sappige mixed grill - elk gerecht wordt met liefde en zorg bereid
-                volgens traditionele recepten en met de beste kruiden, ook voor onze niet vlees eters hebben we genoeg keuze. Bekijk onze menu.
+                Van vers gegrilde shoarma tot sappige mixed grill, vegetarische gerechten en heerlijke salades - elk gerecht wordt met liefde en zorg bereid
+                volgens traditionele recepten en met de beste kruiden.
               </p>
-              <Link href="/menu">
+              {/* <Link href="/menu">
                 <Button size="lg">Bestel Nu</Button>
-              </Link>
+              </Link> */}
             </div>
-            <div className="relative h-[700px] rounded-lg overflow-hidden">
+            <div className="relative h-[400px] rounded-lg overflow-hidden">
               <img
-                src="/20251204_210833.jpg"
+                src="/mammamia2.jpeg"
                 alt="Chef bereidt shoarma"
                 className="w-full h-full object-cover"
               />
@@ -217,7 +217,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex gap-3">
                   <Clock className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-sm leading-relaxed">Ma-Zo: 11:00 - 24:00</span>
+                  <span className="text-sm leading-relaxed">Ma-Zo: 11:00 - 23:00</span>
                 </div>
               </div>
             </Card>
@@ -252,7 +252,7 @@ export default function HomePage() {
                 Verse shoarma en grill specialiteiten, met liefde bereid en geserveerd.
               </p>
             </div>
-            <div>
+            {/* <div>
               <h4 className="font-semibold mb-4">Menu</h4>
               <ul className="space-y-2 text-sm">
                 <li>
@@ -276,7 +276,7 @@ export default function HomePage() {
                   </Link>
                 </li>
               </ul>
-            </div>
+            </div> */}
             <div>
               <h4 className="font-semibold mb-4">Informatie</h4>
               <ul className="space-y-2 text-sm">
@@ -291,21 +291,21 @@ export default function HomePage() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/algemene-voorwaarden" className="text-muted-foreground hover:text-foreground">
+                  {/* <Link href="/algemene-voorwaarden" className="text-muted-foreground hover:text-foreground">
                     Algemene Voorwaarden
-                  </Link>
+                  </Link> */}
                 </li>
                 <li>
-                  <Link href="/privacy" className="text-muted-foreground hover:text-foreground">
+                  {/* <Link href="/privacy" className="text-muted-foreground hover:text-foreground">
                     Privacy
-                  </Link>
+                  </Link> */}
                 </li>
               </ul>
             </div>
-            <div>
+            {/* <div>
               <h4 className="font-semibold mb-4">Volg Ons</h4>
               <ul className="space-y-2 text-sm">
-                {/* <li>
+                <li>
                   <a href="#" className="text-muted-foreground hover:text-foreground">
                     Instagram
                   </a>
@@ -319,9 +319,9 @@ export default function HomePage() {
                   <a href="#" className="text-muted-foreground hover:text-foreground">
                     TikTok
                   </a>
-                </li> */}
+                </li>
               </ul>
-            </div>
+            </div> */}
           </div>
           <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
             <p>© 2025 MAMMAMIA. Alle rechten voorbehouden.</p>
@@ -335,108 +335,121 @@ export default function HomePage() {
 const popularDishes = [
   {
     id: 1,
-    name: "Kip filet Schotel",
-    description: "Verse kip met shoarma, met patat of gebakken aardappelen , salade, saus",
-    price: 17.5,
-    image: "/kipfiletschotel.jpg",
+    name: "Kipfilet en Shoarma Schotel",
+    description: "Verse kipfilet en Shoarma",
+    price: 12.5,
+    image: "/shoarma-kip.jpg", // replaced with real restaurant photo
   },
   {
     id: 2,
-    name: "Falafel",
-    description: "Falafel pita en wraps",
-    price: 8.5,
-    image: "/IMG-20251204-WA0001.jpg",
+    name: "Entrecote Shoarma",
+    description: "Entrecote, Shoarma, patat, groenten",
+    price: 16.5,
+    image: "/entrecote.jpg", // replaced with real restaurant photo
   },
   {
     id: 3,
-    name: "Kipsate schotel inclusief salade patat of gebakken aardappel en saus",
-    description: "Kipsate",
-    price: 19.5,
-    image: "/IMG-20251204-WA0000.jpg",
+    name: "Kapsalon",
+    description: "Friet, shoarma, kaas, sla, saus",
+    price: 9.5,
+    image: "/kapsalon.jpg", // replaced with real restaurant photo
   },
   {
     id: 4,
-    name: "Verschillende Wraps",
-    description: "Kip,Shoarma,of Falafel, vegetarisch ook mogelijk groenten, knoflooksaus",
-    price: 9.5,
-    image: "/wraps.jpeg",
+    name: "Wraps",
+    description: "Falafel, Shoarma  Vegetarisch, ",
+    price: 8.5,
+    image: "/wraps.jpeg", // replaced with real restaurant photo
   },
   {
     id: 5,
-    name: "Ossehaas Schotel",
-    description: "Ossehaas, Salade, Sauzen Patat of gebakken aardappelen",
-    price: 9.5,
-    image: "/ossehaas.jpg",
+    name: "Falafel",
+    description: "Falafel",
+    price: 8.5,
+    image: "/falafel.jpeg", // replaced with real restaurant photo
   },
   {
     id: 6,
-    name: "Shoarma-kip Schotel inclusief salade patat of gebakken aardappel en saus",
-    description: "Shoarma-kip",
-    price: 19.5,
-    image: "/shoarma-kip.jpg",
+    name: "Familie Shoarma Menu",
+    description: "Shoarma, patat, suazen, sla",
+    price: 8.5,
+    image: "/famshomenu.jpg", // replaced with real restaurant photo
   },
   {
     id: 7,
-    name: "Sparerib schotel inclusief salade patat of gebakken aardappel en saus",
-    description: "Sparerib schotel",
-    price: 19.5,
-    image: "/spareribschotel.jpg",
+    name: "Griekse Salade",
+    description: "Griekse salade met feta",
+    price: 8.5,
+    image: "/griekssalade.jpg", // replaced with real restaurant photo
   },
   {
     id: 8,
-    name: "Sauzen",
-    description: "Sauzen knoflook, sambal, groene sambal, uien, etc",
-    price: 19.5,
-    image: "/sausen.jpg",
+    name: "Hamburger",
+    description: "Hamburger",
+    price: 8.5,
+    image: "/hamburger.jpg", // replaced with real restaurant photo
   },
   {
     id: 9,
-    name: "Kipnugget menu schotel inclusief salade patat of gebakken aardappel en saus",
-    description: "Kipnugget menu",
-    price: 19.5,
-    image: "/kipnuggets.jpg",
+    name: "Kipfilet Schotel",
+    description: "Kipfilet",
+    price: 8.5,
+    image: "/kipfiletschotel.jpg", // replaced with real restaurant photo
   },
   {
     id: 10,
-    name: "Lamskottelet schotel inclusief salade patat of gebakken aardappel en saus",
-    description: "Lamskottelet schotel",
-    price: 19.5,
-    image: "/lamskottelet.jpg",
+    name: "Kipnuggets",
+    description: "Kipnuggets",
+    price: 8.5,
+    image: "/kipnuggets.jpg", // replaced with real restaurant photo
   },
   {
     id: 11,
-    name: "Shoarma Kip schotel inclusief salade patat of gebakken aardappel en saus",
-    description: "Shoarma Kip schotel",
-    price: 19.5,
-    image: "/shoarma-kip.jpg",
+    name: "Lams Kottelet",
+    description: "Lams Kottelet",
+    price: 8.5,
+    image: "/lamskottelet.jpg", // replaced with real restaurant photo
   },
   {
     id: 12,
-    name: "Hamburger  schotel inclusief salade patat of gebakken aardappel en saus",
-    description: "Hamburger schotel",
-    price: 19.5,
-    image: "/hamburger.jpg",
+    name: "Ossenhaas",
+    description: "Ossenhaas",
+    price: 8.5,
+    image: "/ossehaas.jpg", // replaced with real restaurant photo
   },
   {
     id: 13,
-    name: "Familie Shoarma schotel inclusief salade patat of gebakken aardappel en saus",
-    description: "Familie Shoarma schotel",
-    price: 19.5,
-    image: "/famshomenu.jpg",
+    name: "Sauzen",
+    description: "Sauzen",
+    price: 8.5,
+    image: "/sausen.jpg", // replaced with real restaurant photo
   },
   {
     id: 14,
-    name: "Griekse Salade schotel",
-    description: "Griekse Salade ",
-    price: 19.5,
-    image: "/griekssalade.jpg",
+    name: "Shoarma Spareribs",
+    description: "Shoarma Spareribs",
+    price: 8.5,
+    image: "/shoarma-spareribs.jpg", // replaced with real restaurant photo
   },
   {
-    id: 15,
-    name: "Entrecote schotel inclusief salade patat of gebakken aardappel en saus",
-    description: "Entrecote schotel",
-    price: 19.5,
-    image: "/entrecote.jpg",
+    id: 10,
+    name: "Shoarmakebab",
+    description: "Shoarmakebab",
+    price: 8.5,
+    image: "/shoarmakebab.jpg", // replaced with real restaurant photo
   },
-
+  {
+    id: 10,
+    name: "Shoarmaschotel",
+    description: "Shoarmaschotel",
+    price: 8.5,
+    image: "/shoarmaschotel.jpg", // replaced with real restaurant photo
+  },
+  {
+    id: 10,
+    name: "Spareribs Schotel",
+    description: "Spareribs Schotel",
+    price: 8.5,
+    image: "/spareribschotel.jpg", // replaced with real restaurant photo
+  },
 ]

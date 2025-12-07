@@ -29,7 +29,7 @@ export default function CartPage() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between px-4">
           <Link href="/" className="flex items-center gap-2">
-            <span className="text-2xl font-serif font-bold text-primary">MAMMAMIA</span>
+            <img src="/mammamia-logo.jpg" alt="MAMMAMIA Grillroom & Shoarma" className="h-12 w-auto" />
           </Link>
           <Link href="/menu">
             <Button size="sm" variant="outline" className="gap-2 bg-transparent">

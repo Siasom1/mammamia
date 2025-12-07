@@ -38,6 +38,11 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.52 0.15 35);
+
+  /* Added customizable hero logo height variable */
+  /* Customize the logo height on the hero section by changing this value */
+  /* Examples: 80px (smaller), 120px (default), 160px (larger), 200px (extra large) */
+  --hero-logo-height: 120px;
 }
 
 .dark {
